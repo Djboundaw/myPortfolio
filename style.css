@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: #2d2f32;
+}
+
+#navbar {
+  background: #be3144;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: min(100vw, 260px);
+}
+.nav-link {
+  font-size: 1.5rem;
+}
+#welcome-section {
+  min-width: 320px;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+}
+#welcome-section p {
+  font-style: oblique;
+  line-height: 50px;
+  color: #be3144;
+  font-size: 2rem;
+}
+
+/* ---------------------Projects--------------------- */
+
+#project {
+  background: #45567d;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#myprojects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: 20px;
+  max-width: 95%;
+  margin: auto;
+}
+.project-tile {
+  display: block;
+}
+.project-tile h3 {
+  padding: 15px;
+  background: #303841;
+  margin-top: 0;
+  border-radius: 0 0 5px 5px;
+}
+.project-tile h3:hover::before {
+  content: "< ";
+  color: #be3144;
+}
+.project-tile h3:hover::after {
+  content: " />";
+  color: #be3144;
+}
+.project-img {
+  margin-bottom: -5px;
+  width: 100%;
+
+  border-radius: 5px 5px 0 0;
+}
